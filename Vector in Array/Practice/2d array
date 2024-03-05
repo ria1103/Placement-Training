@@ -1,0 +1,19 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int r,c,i,j;
+    cin>>r>>c;
+    vector<vector<int>> v(r,vector<int>(c));
+    for(i=0; i<r; i++){
+        for(j=0; j<c; j++){
+            cin>>v[i][j];
+        }
+    }
+    for(i=0; i<r; i++){
+        for(j=0; j<c; j++){
+            cout<<v[i][j]<<" ";
+        }
+        cout<<endl;
+    }
+    
+}
