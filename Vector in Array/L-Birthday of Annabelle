@@ -1,0 +1,36 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int t,n,i,j;
+    bool accepted;
+    cin>>t;
+    while(t--){
+        cin>>n;
+        vector<int> p(n);
+        for(int i=0; i<n; i++){
+            cin>>p[i];
+        }
+        sort(p.begin(), p.end());
+        accepted = false;
+        i=0;
+        j=n-1;
+        while(i<j){
+            if(p[i] + p[j] > 2000){
+                j--;
+            }
+            else if(p[i] + p[j] < 2000){
+                i++;
+            }
+            else{
+                accepted=true;
+                break;
+            }
+        }
+        if(accepted)
+            cout<<"Accepted";
+        else
+            cout<<"Rejected";
+        cout<<endl;
+    }
+}
