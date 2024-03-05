@@ -1,0 +1,16 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    long long int a,num=0,n;
+    cin>>a;
+    n=abs(a);
+    while(n>0){
+        num = (num*10) + (n%10);
+        n=n/10;
+    }
+    if(a<0)
+        cout<<num*-1<<endl;
+    else
+        cout<<num<<endl;
+}
