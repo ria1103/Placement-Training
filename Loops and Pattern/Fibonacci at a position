@@ -1,0 +1,13 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int a[20];
+    int pos;
+    a[0]=a[1]=1;
+    cin>>pos;
+    for(int i=2; i<pos; i++){
+        a[i] = a[i-1] + a[i-2];
+    }
+    cout<<a[pos-1]<<endl;
+}
