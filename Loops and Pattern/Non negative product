@@ -1,0 +1,23 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n,cnt,t,a,zeroes;
+    cin>>t;
+    while(t>0){
+        cin>>n;
+        cnt = zeroes = 0;
+        while(n>0){
+            cin>>a;
+            if(a<0) cnt++;
+            else if(a==0) zeroes=1;
+            n--;
+        }
+    if(cnt%2==0 || zeroes==1)
+        cout<<0;
+    else
+        cout<<1;
+    cout<<endl;
+    t--;
+    }
+}
