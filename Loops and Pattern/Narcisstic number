@@ -1,0 +1,24 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int a,n,rem,dig,N;
+    long int sum=0;
+    cin>>a;
+    n=a;
+    N=a;
+    while(N>0){
+        N=N/10;
+        dig++;
+    }
+    while(n>0){
+        rem=n%10;
+        sum+=pow(rem,dig);
+        n=n/10;
+    }
+    if(sum==a)
+        cout<<"Yes";
+    else
+        cout<<"No";
+    cout<<endl;
+}
