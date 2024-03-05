@@ -1,0 +1,13 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n,sum=0,tot=0,i=99;
+    tot = (101*100)/2;
+    while(i>0){
+        cin>>n;
+        sum+=n;
+        i--;
+    }
+    cout<<tot-sum<<endl;
+}
