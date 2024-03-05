@@ -1,0 +1,16 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int r,c,sum;
+    cin>>r>>c;
+    vector<int> v(c);
+    while(r--){
+       sum=0;
+       for(int i=0; i<c; i++){
+           cin>>v[i];
+          sum+=v[i];
+       }
+       cout<<sum<<"\n";
+    }
+}
